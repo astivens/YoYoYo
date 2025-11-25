@@ -2,7 +2,7 @@
 
 Una página web visualmente atractiva que presenta el perfil profesional, análisis DAFO, plan de acción y visión personal.
 
-## 🚀 Características
+## Características
 
 - **Diseño Moderno**: Interfaz visualmente atractiva con gradientes y animaciones suaves
 - **Responsive**: Optimizado para dispositivos móviles, tablets y escritorio
@@ -10,7 +10,7 @@ Una página web visualmente atractiva que presenta el perfil profesional, análi
 - **Navegación Suave**: Scroll suave entre secciones
 - **Tema Oscuro**: Diseño elegante con paleta de colores oscura
 
-## 📋 Secciones
+## Secciones
 
 1. **Hero Section**: Presentación principal con nombre y visión a 3-5 años
 2. **Perfil Personal y Profesional**: Descripción personal y profesional
@@ -19,7 +19,7 @@ Una página web visualmente atractiva que presenta el perfil profesional, análi
 5. **Plan de Acción**: Timeline con objetivos y acciones clave
 6. **Visión y Lema**: Frase motivacional personal
 
-## 🌐 Publicar en GitHub Pages
+## Publicar en GitHub Pages
 
 ### Opción 1: Desde la Interfaz de GitHub
 
@@ -60,7 +60,7 @@ git push -u origin main
 
 Luego sigue los pasos 2 y 3 de la Opción 1 para habilitar GitHub Pages.
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 YoYoYo/
@@ -70,7 +70,7 @@ YoYoYo/
 └── README.md       # Este archivo
 ```
 
-## 🎨 Personalización
+## Personalización
 
 ### Colores
 
@@ -93,28 +93,28 @@ Las fuentes utilizadas son:
 
 Ambas se cargan desde Google Fonts.
 
-## 🔧 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - HTML5
 - CSS3 (con variables CSS, animaciones, gradientes)
 - JavaScript (Vanilla JS, sin dependencias)
 - Google Fonts
 
-## 📱 Compatibilidad
+## Compatibilidad
 
 - ✅ Chrome/Edge (últimas versiones)
 - ✅ Firefox (últimas versiones)
 - ✅ Safari (últimas versiones)
 - ✅ Navegadores móviles modernos
 
-## 📝 Notas
+## Notas
 
 - El sitio no requiere ningún servidor o build process
 - Todos los archivos son estáticos
 - No se requiere Node.js, npm o ninguna herramienta adicional
 - Compatible con GitHub Pages sin configuración adicional
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### El sitio no se actualiza en GitHub Pages
 
@@ -134,7 +134,7 @@ Ambas se cargan desde Google Fonts.
 - Asegúrate de que las fuentes de Google se carguen correctamente
 - Revisa la consola del navegador para errores de carga
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es personal y está destinado para uso en GitHub Pages.
 
