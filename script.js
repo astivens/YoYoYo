@@ -4,7 +4,11 @@
 class PortfolioData {
     constructor() {
         this.profile = {
-            text: "Soy un ingeniero en formación, me considero un líder de proyectos y una persona con gran capacidad para adquirir e interiorizar nuevos conocimientos, impulsado por mi curiosidad. Mi aspiración a largo plazo es alcanzar la estabilidad necesaria para dedicarme a retos personales y actividades, principalmente sin ánimo de lucro, como la astronomía y otras de valor intangible, con el objetivo de dejar una huella."
+            text: "Soy un ingeniero en formación, me considero un líder de proyectos y una persona con gran capacidad para adquirir e interiorizar nuevos conocimientos, impulsado por mi curiosidad. Mi aspiración a largo plazo es alcanzar la estabilidad necesaria para dedicarme a retos personales y actividades, principalmente sin ánimo de lucro, como la astronomía y otras de valor intangible, con el objetivo de dejar una huella.",
+            age: "22 años",
+            location: "Valledupar, Cesar",
+            phone: "3052773316",
+            email: "anuar.sierra.dev@gmail.com"
         };
 
         this.vision = {
@@ -243,9 +247,52 @@ class UIRenderer {
     }
 
     renderAll() {
+        this.renderProfile();
         this.renderDafo();
         this.renderEstrategias();
         this.renderPlan();
+    }
+
+    renderProfile() {
+        const profileText = document.getElementById('profile-text');
+        const profileCard = document.querySelector('.profile-card');
+        
+        if (!profileText || !profileCard) return;
+
+        const profile = this.data.profile;
+        
+        // Renderizar el texto del perfil
+        profileText.innerHTML = profile.text;
+        
+        // Verificar si ya existe la información de contacto
+        let contactInfo = profileCard.querySelector('.profile-contact');
+        
+        if (!contactInfo) {
+            // Crear sección de información de contacto
+            contactInfo = document.createElement('div');
+            contactInfo.className = 'profile-contact';
+            contactInfo.innerHTML = `
+                <div class="profile-contact-item">
+                    <span class="contact-label">Edad:</span>
+                    <span class="contact-value">${profile.age}</span>
+                </div>
+                <div class="profile-contact-item">
+                    <span class="contact-label">Ubicación:</span>
+                    <span class="contact-value">${profile.location}</span>
+                </div>
+                <div class="profile-contact-item">
+                    <span class="contact-label">Teléfono:</span>
+                    <a href="tel:${profile.phone}" class="contact-value">${profile.phone}</a>
+                </div>
+                <div class="profile-contact-item">
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:${profile.email}" class="contact-value">${profile.email}</a>
+                </div>
+            `;
+            
+            // Insertar después del texto del perfil
+            profileText.parentNode.appendChild(contactInfo);
+        }
     }
 
     renderDafo() {

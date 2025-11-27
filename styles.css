@@ -804,7 +804,53 @@ body::after {
     color: var(--beige-cream);
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 2rem;
     font-weight: 400;
+}
+
+.profile-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    padding-top: 2rem;
+    border-top: 3px dashed var(--teal);
+}
+
+.profile-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-family: 'Share Tech Mono', 'Orbitron', monospace;
+    font-size: 0.85rem;
+    color: var(--teal-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.contact-value {
+    font-size: 1rem;
+    color: var(--beige-cream);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+    color: var(--yellow-mustard);
+    text-shadow: 0 0 10px var(--yellow-mustard);
+}
+
+@media (max-width: 768px) {
+    .profile-contact {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 /* DAFO Section */
