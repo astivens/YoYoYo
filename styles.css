@@ -817,7 +817,9 @@ body::after {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    row-gap: 3rem;
     margin-bottom: 4rem;
+    margin-top: 1rem;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -834,6 +836,7 @@ body::after {
     background: rgba(244, 241, 234, 0.05);
     border: 6px solid;
     padding: 2rem;
+    padding-top: 2.5rem;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
@@ -848,7 +851,7 @@ body::after {
 .dafo-card::before {
     content: attr(data-type);
     position: absolute;
-    top: -20px;
+    top: -4px;
     left: 20px;
     background: var(--bg-dark);
     padding: 0.5rem 1rem;
@@ -1004,7 +1007,9 @@ body::after {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
+    row-gap: 3rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -1014,6 +1019,7 @@ body::after {
     background: rgba(244, 241, 234, 0.05);
     border: 6px solid;
     padding: 2rem;
+    padding-top: 2.5rem;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
@@ -1028,7 +1034,7 @@ body::after {
 .estrategia-card::before {
     content: attr(data-type);
     position: absolute;
-    top: -20px;
+    top: -4px;
     left: 20px;
     background: var(--bg-dark);
     padding: 0.5rem 1rem;
