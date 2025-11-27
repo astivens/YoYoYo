@@ -17,8 +17,7 @@ class PortfolioData {
                 { id: "F1", text: "Liderazgo en proyectos" },
                 { id: "F2", text: "Resiliente" },
                 { id: "F3", text: "Perspicaz" },
-                { id: "F4", text: "Gran curiosidad" },
-                { id: "F5", text: "Ambición por grandes logros" }
+                { id: "F4", text: "Ambición por grandes logros" }
             ],
             oportunidades: [
                 { id: "O1", text: "Mercados poco explorados" },
@@ -30,8 +29,7 @@ class PortfolioData {
                 { id: "D1", text: "Procrastinación" },
                 { id: "D2", text: "Falta de confianza en mis compañeros" },
                 { id: "D3", text: "Egocentrismo" },
-                { id: "D4", text: "Distracción" },
-                { id: "D5", text: "Obsesión con tareas" }
+                { id: "D4", text: "Obsesión con tareas" }
             ],
             amenazas: [
                 { id: "A1", text: "Sobre oferta" },
